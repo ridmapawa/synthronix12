@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Synthronix | Smart IoT & Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Synthronix</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 class="fade">Innovating Smart Technology</h1>
+  <p class="fade delay">IoT Products • Smart Gadgets • Software & Mobile Apps</p>
+  <button class="fade delay2">Explore Products</button>
+</section>
+
+<section id="about" class="section fade">
+  <h2>About Synthronix</h2>
+  <p>
+    Synthronix builds innovative IoT products, smart gadgets,
+    and scalable digital solutions designed for the future.
+  </p>
+</section>
+
+<section id="products" class="section dark">
+  <h2 class="fade">Our Products</h2>
+  <div class="product-grid">
+    <div class="product-card fade">
+      <img src="images/nfc-card.jpg">
+      <h3>Smart NFC Business Card</h3>
+      <p>Tap & share instantly.</p>
+    </div>
+    <div class="product-card fade">
+      <img src="images/iot-device.jpg">
+      <h3>IoT Automation Device</h3>
+      <p>ESP32 powered automation.</p>
+    </div>
+    <div class="product-card fade">
+      <img src="images/smart-gadget.jpg">
+      <h3>Bluetooth Smart Gadget</h3>
+      <p>Portable & powerful.</p>
+    </div>
+    <div class="product-card fade">
+      <img src="images/mobile-app.jpg">
+      <h3>Mobile Apps</h3>
+      <p>Android & iOS solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section fade">
+  <h2>Services</h2>
+  <div class="cards">
+    <div class="card">IoT Development</div>
+    <div class="card">Embedded Systems</div>
+    <div class="card">Mobile Apps</div>
+    <div class="card">Web Software</div>
+  </div>
+</section>
+
+<section id="contact" class="section dark fade">
+  <h2>Contact</h2>
+  <p>Email: contact@synthronix.com</p>
+</section>
+
+<footer>
+  © 2026 Synthronix
+</footer>
+
+<script>
+  const fades = document.querySelectorAll('.fade');
+  window.addEventListener('scroll', () => {
+    fades.forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+        el.classList.add('show');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
